@@ -1,0 +1,96 @@
+Xpath - XML Path lang
+      - Address of a webelement
+      - alternative locator strategy. When no id, name, class, tagname
+
+     http://automationtricks.blogspot.com/2010/09/how-to-use-functions-in-xpath-in.html
+
+Types:
+1. Absolute or Complete xpath
+
+/ --> represents look for the tag inside the parent immediately
+  --> represents start from the root tag
+
+- direct way to locate an element
+
+html/body/div/div/header/div[3]/div/div/div/a/img
+
+How to validate the xpath: inspector window --> Ctrl+F or Cmd+F
+
+Adv:
+1. accurate
+2. fast
+
+Disadv:
+1. very brittle / highly flaky
+2.Any smallest change that the developer makes to the front end , it breaks the test automation script
+2.i.e high maintaincence
+
+
+2. Relative or Partial xpath
+Tagname, attr, value trio
+Syntax: //tagName[@attribute='value']
+
+//img[@class='logo img-responsive']
+FIND ALL THE IMAGE TAGS HAVING A CLASS LOGO & IMAGE-RESPONSIVE
+
+How to handle xpath dynamically:
+1. Using xpath text() function:
+syntax: //tagName[text()='value']
+
+e.g: //a[text()='Login']
+
+Reference xpath functions: https://developer.mozilla.org/en-US/docs/Web/XPath/Functions
+
+2. Using contains
+Syntax: //tagName[contains(@attribute,'value')]
+
+e.g: //button[contains(@name,'2id')]
+
+3. using starts-with
+Syntax: //tagName[starts-with(@attribute,'value')]
+
+e.g: //button[starts-with(@name,'button1')]
+
+4. One element having multiple xpaths
+//input[@name='FirstName']
+//input[@id='FirstName']
+
+5. AND Operator:
+syntax: //tagName[xpath-statement1 and xpath-statement2]
+
+//input[@name='FirstName' and @id='FirstName']
+//input[@class='form-control' and @id='user-message']
+
+6. OR Operator:
+syntax: //tagName[xpath-statement1 or xpath-statement2]
+e.g: //input[@class='form-control' or @id='user-message']
+
+7. Chained declarations
+We can chain multiple xpaths
+//div[@class='form-group']//input[@id='user-message']
+
+8. Following
+1. First identify the form id, 'get-total'
+2. Find all the input tag after that parent node
+
+e.g: //form[@id='gettotal']//following::input
+
+Useful Add-ons:
+Chrome: chropath, firefox browsers
+Firefox: Try xpath
+
+2 elements have same xpath:
+Use Chained declarations to resolve duplicacy
+
+if we have a list under an element
+
+syntax: //tag[@attribute='value']following::'listattributename'
+
+Xpath errors:
+NoSuchElementException --> Spelling mistakes, it couldn't identify the specified element
+
+InvalidSelectorException --> Syntax errors
+
+InvalidElementStateException --> If a textbox is disabled, but you try typing there.
+
+

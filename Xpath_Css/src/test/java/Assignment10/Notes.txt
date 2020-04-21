@@ -1,0 +1,18 @@
+1.   Define	all	the	different	WebDriver	exceptions	you	had	come	across
+
+Xpath errors:
+NoSuchElementException --> Spelling mistakes, it couldn't identify the specified element
+
+InvalidSelectorException --> Syntax errors
+
+InvalidElementStateException --> If a textbox is disabled, but you try typing there.
+
+unabletocreateprofile exception--trying to launch chrome driver and had this exception by mukesh
+
+timeoutexception- while loading, inputting a value if we are unable tomaccess that particular source or element
+
+IllegalMonitorStateException- Thrown to indicate that a thread has attempted to wait on an object's monitor
+
+
+echoecho.com
+

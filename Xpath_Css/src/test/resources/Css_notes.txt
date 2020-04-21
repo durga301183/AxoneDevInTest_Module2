@@ -1,0 +1,66 @@
+CSS - Cascading Style sheet
+    - determines the size, color, font, layout, position
+
+Useful links:
+https://www.red-gate.com/simple-talk/wp-content/uploads/imported/1269-Locators_table_1_0_2.pdf?file=4937
+
+Basic Syntax:
+If we have ID: #idname
+eg: #FirstName
+
+Class: .classname
+eg: .logo.img-responsive
+
+Rules for CSS Syntax:
+1. No @symbol used
+2. / -> replaced with '>' or whitespace.
+Eg1: form > div > input
+Eg2: form div input
+3.. No // allowed
+4. replace the id with #
+5. replace the class with .
+
+1. using tag, attr, value trio
+xpath syntax: //tagName[@attribute='value']
+css syntax:  tagName[attribute='value']
+
+e.g: input[class='form-control']
+e.g2: input[id='user-message']
+
+2. Using contains
+syntax: tag[attribute*='containing text']
+
+e.g: input[id*='sage']
+
+3. Starting text of an attribute
+syntax: tag[attribute^='starting text']
+
+e.g: input[id^='user']
+
+4. Ending text of an attribute
+syntax: tag[attribute$='starting text']
+
+e.g: input[id$='age']
+
+5. OR Operation
+two css locator statements separated with comma
+e.g: .form-group,#user-message
+
+6. AND Operation
+two css locator statements separated with Whitespace
+e.g: .form-group #user-message
+
+7. First of type
+
+.tree-branch > ul > li:first-of-type
+
+8. Last of type
+.tree-branch > ul > li:last-of-type
+
+Absolute path:
+Xpath: html/body/div/div/header/div[3]/div/div/div/a/img
+CSS: html>body>div>div>header>div:nth-child(3)>div>div>div>a>img
+
+
+
+

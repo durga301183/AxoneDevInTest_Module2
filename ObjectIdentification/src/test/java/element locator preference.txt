@@ -1,0 +1,9 @@
+8. class name	          Locates elements whose class name contains the search value (compound class names are not permitted)
+3. css selector	      Locates elements matching a CSS selector
+1. id	                  Locates elements whose ID attribute matches the search value
+2. name	              Locates elements whose NAME attribute matches the search value
+ 5.link text	          Locates anchor elements whose visible text contains the search value. If multiple elements are matching, only the first one will be selected.
+ 7.tag name	          Locates elements whose tag name matches the search value
+ 4.xpath	              Locates elements matching an XPath expression
+
+ By id is the more preferable which is because , if the id are unique then its the best way to identify the web element

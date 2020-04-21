@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="57805" started-at="2020-03-28T12:28:08 GMT" finished-at="2020-03-28T12:29:06 GMT">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="57805" started-at="2020-03-28T12:28:08 GMT" finished-at="2020-03-28T12:29:06 GMT">
+      <class name="TestHowToAutomateWebDriverBinaries">
+        <test-method status="PASS" signature="testAutomateBinaries()[pri:0, instance:TestHowToAutomateWebDriverBinaries@69ea3742]" name="testAutomateBinaries" duration-ms="47300" started-at="2020-03-28T12:28:19 GMT" finished-at="2020-03-28T12:29:06 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAutomateBinaries -->
+      </class> <!-- TestHowToAutomateWebDriverBinaries -->
+      <class name="TestHowHeadlessBrowsersWorks">
+        <test-method status="PASS" signature="headlessBrowsersWorks()[pri:0, instance:TestHowHeadlessBrowsersWorks@5702b3b1]" name="headlessBrowsersWorks" duration-ms="10419" started-at="2020-03-28T12:28:08 GMT" finished-at="2020-03-28T12:28:19 GMT">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headlessBrowsersWorks -->
+      </class> <!-- TestHowHeadlessBrowsersWorks -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

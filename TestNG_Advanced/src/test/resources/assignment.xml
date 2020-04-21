@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:\Users\G S Sastry\Axone Workspace\TestNG_Advanced\src\test\java\Assignment">
+        <classes>
+            <class name="Assignment.TestStudent">
+                <methods>
+                    <include name="testFindGrade_absent"/>
+                    <include name="testFindGrade_AGrade"/>
+                    <include name="testFindGrade_BGrade"/>
+                    <include name="testFindGrade_CGrade"/>
+                    <include name="testFindGrade_Fail"/>
+                </methods>
+            </class>
+            <class name="Assignment.Student">
+                <methods>
+                    <include name="findGrade"/>
+                </methods>
+
+            </class>
+        </classes>
+    </test>
+</suite>

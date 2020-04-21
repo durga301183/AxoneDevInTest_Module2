@@ -1,0 +1,58 @@
+Step1: Download selenium server jar
+
+Configuring the Hub:
+1. Download the selenium-server-standalone-3.141.59.jar
+2. Launch the command prompt / Terminal
+3. Navigate to the folder  where you copied the selenium-server-standalone-3.141.59.jar
+
+Command 1: start the hub (default port: 4444)
+java -jar selenium-server-standalone.jar -role hub
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+
+Command 2: how to verify the grid is running or not
+http://localhost:4444/
+
+Command 3: How to stop the hub/node
+ctrl + c
+
+Command 4: starting the hub in a different port
+java -jar selenium-server-standalone-3.141.59.jar -role hub -port 5000
+
+Command 5: start the nodes
+java -jar selenium-server-standalone.jar -role node -hub http://localhost:4444
+java -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.0.10:4444/grid/register/ -port 5000
+
+Command 6: browserName, maxInstance, max session
+-Dwebdriver.chrome.driver="/Users/G S Sastry/Selenium drivers/chromedriver" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.0.10:4444/grid/register/ -port 6000 -browser browserName=chrome,maxInstances=5
+java -Dwebdriver.chrome.driver="/Users/karthik/Documents/workspace/grid/drivers/chromedriver" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://10.37.129.2:4444/grid/register/ -port 4000 -browser browserName=chrome,maxInstances=5 -browser browserName=firefox,maxInstances=5 -browser browserName=safari,maxInstances=1
+MaxInstance vs MaxSesssion
+MaxInstances --> Max. no of browsers per node
+             --> For a specific type of browser, e.g Firefox
+
+MaxSession -->   The maximum number of browsers that can run in parallel on the node.
+
+Command 7: How to start a hub using json
+java -jar selenium-server-standalone.jar -role hub -hubConfig hubconfig.json
+java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig /Users/karthik/Documents/workspace/axone_workspace/DIT_11_19/DEC_DIT_M2_SeleniumGrid/src/test/resources/hubconfig.json
+
+https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities
+https://github.com/SeleniumHQ/selenium/wiki/Grid2
+
+Command 8: How to start a node using json
+java -jar selenium-server-standalone.jar -role node -nodeConfig nodeconfig.json
+java -Dwebdriver.chrome.driver="/Users/karthik/Documents/workspace/grid/drivers/chromedriver" -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig /Users/karthik/Documents/workspace/axone_workspace/DIT_11_19/DEC_DIT_M2_SeleniumGrid/src/test/resources/nodeconfig.json
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

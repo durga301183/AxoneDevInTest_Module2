@@ -1,0 +1,57 @@
+#METHODS TO HANDLE WINDOWS
+
+String mainwindow=driver.getWindowHandle(); //get parent(current) window name
+    for(String popup :driver.getWindowHandles()) //iterating on child windows
+    {
+    driver.switchTo().window(popup);
+    System.out.println("Popup values: "+popup);
+    // Perform any operations on child window
+    }
+    driver.switchTo().window(mainwindow); //switch back to main window & continue further execution
+
+-------------------------------------------------------
+    public void SwitchToAnotherWindow(Webdriver driver,int window_number){
+
+         List<String> windowlist = null;
+
+        Set<String> windows = driver.getWindowHandles();
+
+        windowlist = new ArrayList<String>(windows);
+
+       String currentWindow = driver.getWindowHandle();
+
+
+       --------------------------------------------------
+
+       public static void main(String[] args) throws InterruptedException
+         {
+
+          WebDriver d = new FirefoxDriver();
+          d.get("url");
+          String prntwin = d.getWindowHandle();
+          System.out.println("Parent window's handle -> " + prntwin);
+          WebElement clkElement = d.findElement(By.id("button1"));
+
+         for(int i = 0; i < 3; i++)
+           {
+           clkElement.click();
+           Thread.sleep(3000);
+           }
+
+           Set<String> allWindowHandles = d.getWindowHandles();
+
+          for(String handle : allWindowHandles)
+             {
+             System.out.println("Window handle - > " + handle);
+          }
+
+       }
+       share
+
+     if (!currentWindow.equalsIgnoreCase(windowlist.get(window_number - 1)))
+        {
+            driver.switchTo().window(windowlist.get(window_number - 1));
+         }
+
+    }
+

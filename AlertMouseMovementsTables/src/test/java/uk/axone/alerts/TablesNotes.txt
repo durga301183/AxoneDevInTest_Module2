@@ -1,0 +1,21 @@
+An HTML table is defined with the <table> tag.
+
+Each table row is defined with the <tr> tag. A table header is defined with the <th> tag. By default, table headings are bold and centered. A table data/cell is defined with the <td> tag.
+Example
+<table style="width:100%">
+  <tr>-----------------------------------------------table row
+    <th>Firstname</th>------------------------------------table header
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>

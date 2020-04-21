@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test name="parametarization 1">
+
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="uk.axone.advancedtestNG.TestPracticalUsageOfParameterization"/>
+        </classes>
+    </test>
+
+    <test name="parametarization 2">
+    <parameter name="browser" value="safari"/>
+        <classes>
+            <class name="uk.axone.advancedtestNG.TestPracticalUsageOfParameterization"/>
+        </classes>
+</test>
+        <test name="parametarization 3">
+<parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="uk.axone.advancedtestNG.TestPracticalUsageOfParameterization"/>
+        </classes>
+    </test>
+</suite>

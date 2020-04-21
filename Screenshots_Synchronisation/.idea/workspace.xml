@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aa377050-2b67-4a7a-ab18-58af902f574d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Assignment12_Framework/Assignment12_Framework.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Automation_Module2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Cucumber/Cucumber.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PageFactoryTest/SimplePageFactoryTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Selenium/Selenium.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SeleniumGrid/SeleniumGrid.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Xpath_Css/Xpath_identification.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1arpNDq4y88MTF2a5uXAKPIYuI0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aa377050-2b67-4a7a-ab18-58af902f574d" name="Default Changelist" comment="" />
+      <created>1587503524763</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587503524763</updated>
+    </task>
+    <servers />
+  </component>
+</project>

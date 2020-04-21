@@ -1,0 +1,12 @@
+Webdriver manager
+
+https://github.com/bonigarcia/webdrivermanager#webdrivermanager-as-java-dependency
+
+Browser commands
+WebDriverManager.chromedriver().setup();
+WebDriverManager.firefoxdriver().setup();
+WebDriverManager.operadriver().setup();
+WebDriverManager.phantomjs().setup();
+WebDriverManager.edgedriver().setup();
+WebDriverManager.iedriver().setup();
+WebDriverManager.chromiumdriver().setup();
